@@ -1,0 +1,12 @@
+src/
+test/
+.github/
+.vscode/
+tsconfig.json
+eslint.config.mjs
+.mocharc.json
+*.log
+.DS_Store
+node_modules/
+test-project/
+test-npx/

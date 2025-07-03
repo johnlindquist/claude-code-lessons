@@ -75,6 +75,9 @@
     "prepare": "npm run build",
     "prepack": "npm run build && oclif manifest && oclif readme",
     "test": "mocha --forbid-only \"test/**/*.test.ts\"",
+    "test:unit": "mocha --forbid-only \"test/unit/**/*.test.ts\" \"test/commands/**/*.test.ts\"",
+    "test:integration": "mocha --forbid-only \"test/integration/**/*.test.ts\" --timeout 10000",
+    "test:smoke": "mocha --forbid-only \"test/smoke/**/*.test.ts\" --timeout 10000",
     "version": "oclif readme && git add README.md"
   },
   "types": "dist/index.d.ts"

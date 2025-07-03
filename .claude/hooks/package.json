@@ -1,0 +1,16 @@
+{
+  "name": "@claude/hooks",
+  "version": "1.0.0",
+  "description": "Claude Code hooks implementation",
+  "main": "index.ts",
+  "type": "module",
+  "scripts": {
+    "test": "node --test __tests__/*.test.ts"
+  },
+  "keywords": ["claude", "hooks", "code"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0"
+  }
+}

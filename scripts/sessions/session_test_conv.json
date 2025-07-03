@@ -1,0 +1,16 @@
+[
+  {
+    "type": "PreToolUse",
+    "payload": {
+      "tool_name": "Bash",
+      "tool_input": {
+        "command": "ls -la",
+        "description": "List files"
+      },
+      "timestamp": "2024-01-15T10:30:00Z",
+      "conversation_id": "test_conv",
+      "request_id": "req_001"
+    },
+    "timestamp": "2025-07-02T18:38:24.624Z"
+  }
+]

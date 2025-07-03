@@ -1,0 +1,14 @@
+{
+  "name": "scripts",
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@anthropic-ai/claude-code": "^1.0.40"
+  }
+}

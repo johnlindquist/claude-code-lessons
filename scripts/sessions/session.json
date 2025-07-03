@@ -1,0 +1,49 @@
+[
+  {
+    "type": "PreToolUse",
+    "payload": {
+      "PreToolUse": {
+        "tool_name": "Bash",
+        "tool_input": {
+          "command": "ls -la",
+          "description": "List files with details"
+        },
+        "timestamp": "2024-01-15T10:30:00Z",
+        "conversation_id": "conv_123",
+        "request_id": "req_456"
+      },
+      "PreToolUse_dangerous": {
+        "tool_name": "Bash",
+        "tool_input": {
+          "command": "rm -rf /",
+          "description": "Remove everything"
+        },
+        "timestamp": "2024-01-15T10:30:00Z",
+        "conversation_id": "conv_123",
+        "request_id": "req_457"
+      },
+      "PostToolUse": {
+        "tool_name": "Edit",
+        "tool_input": {
+          "file_path": "/path/to/file.js",
+          "old_string": "foo",
+          "new_string": "bar"
+        },
+        "timestamp": "2024-01-15T10:31:00Z",
+        "conversation_id": "conv_123",
+        "request_id": "req_458"
+      },
+      "Notification": {
+        "context": "Claude needs approval for a high-risk operation",
+        "timestamp": "2024-01-15T10:32:00Z"
+      },
+      "Stop": {
+        "session_id": "test-session-123",
+        "transcript_path": "/Users/johnlindquist/.claude/projects/test/transcript.jsonl",
+        "stop_hook_active": false,
+        "timestamp": "2024-01-15T10:33:00Z"
+      }
+    },
+    "timestamp": "2025-07-02T18:37:33.086Z"
+  }
+]

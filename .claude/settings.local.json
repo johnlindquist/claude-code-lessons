@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__pieces__ask_pieces_ltm",
+      "WebFetch(domain:docs.anthropic.com)",
+      "Bash(mkdir:*)",
+      "Bash(ls:*)",
+      "Bash(find:*)",
+      "Bash(rg:*)",
+      "Bash(grep:*)",
+      "Bash(fd:*)",
+      "Bash(cat:*)",
+      "Bash(bun run:*)",
+      "Bash(rm:*)",
+      "Bash(jq:*)"
+    ],
+    "deny": []
+  }
+}

@@ -3,6 +3,8 @@
 [![Version](https://img.shields.io/npm/v/claude-hooks.svg)](https://npmjs.org/package/claude-hooks)
 [![License](https://img.shields.io/npm/l/claude-hooks.svg)](https://github.com/anthropics/claude-hooks/blob/main/LICENSE)
 [![Downloads/week](https://img.shields.io/npm/dw/claude-hooks.svg)](https://npmjs.org/package/claude-hooks)
+[![Test](https://github.com/anthropics/claude-hooks/actions/workflows/test.yml/badge.svg)](https://github.com/anthropics/claude-hooks/actions/workflows/test.yml)
+[![Coverage Status](https://coveralls.io/repos/github/anthropics/claude-hooks/badge.svg?branch=main)](https://coveralls.io/github/anthropics/claude-hooks?branch=main)
 
 > Interactive CLI to set up Claude Code hooks with customizable security rules and features
 

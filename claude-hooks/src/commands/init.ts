@@ -86,6 +86,19 @@ The generated hooks are minimal and focused on your specific needs, making them 
 
     console.log(chalk.blue.bold('\n🪝 Welcome to Claude Hooks Setup Wizard!\n'))
 
+    // Check if Bun is installed
+    try {
+      await fs.access('/usr/bin/bun')
+    } catch {
+      try {
+        await fs.access('/usr/local/bin/bun')
+      } catch {
+        console.log(chalk.yellow('⚠️  Warning: Bun is not installed on your system'))
+        console.log(chalk.gray('   Bun is required to run Claude hooks'))
+        console.log(chalk.gray('   Install it later with: curl -fsSL https://bun.sh/install | bash\n'))
+      }
+    }
+
     // Check if hooks already exist
     if (!flags.force && await fs.pathExists('.claude/hooks/index.ts')) {
       if (!flags.yes) {
@@ -237,10 +250,13 @@ The generated hooks are minimal and focused on your specific needs, making them 
 
       // Success message
       console.log(chalk.green('\n✨ Claude Code hooks setup complete!\n'))
+      console.log(chalk.yellow('⚠️  Important: Bun is required to run the hooks'))
+      console.log(chalk.gray('   Install Bun: curl -fsSL https://bun.sh/install | bash\n'))
       console.log(chalk.gray('Next steps:'))
-      console.log(chalk.gray('1. Review the generated hooks in .claude/hooks/'))
-      console.log(chalk.gray('2. Customize the rules to fit your needs'))
-      console.log(chalk.gray('3. Test your hooks by using Claude Code\n'))
+      console.log(chalk.gray('1. Ensure Bun is installed (see above)'))
+      console.log(chalk.gray('2. Review the generated hooks in .claude/hooks/'))
+      console.log(chalk.gray('3. Customize the rules to fit your needs'))
+      console.log(chalk.gray('4. Test your hooks by using Claude Code\n'))
 
     } catch (error) {
       spinner.fail('Failed to generate hooks')

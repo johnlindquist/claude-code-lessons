@@ -47,11 +47,15 @@
 
 ## Quick Start
 
-Run the interactive setup wizard in your project:
+1. **Install Bun** (required for running hooks):
+   ```bash
+   curl -fsSL https://bun.sh/install | bash
+   ```
 
-```bash
-npx claude-hooks
-```
+2. **Run the interactive setup wizard** in your project:
+   ```bash
+   npx claude-hooks
+   ```
 
 This will guide you through setting up hooks tailored to your needs.
 
@@ -471,7 +475,11 @@ DEBUG=true bun .claude/hooks/index.ts
 ## Requirements
 
 - Node.js >= 18.0.0
-- [Bun](https://bun.sh) runtime (for running hooks)
+- **[Bun](https://bun.sh) runtime** - Required for running the generated hooks
+  ```bash
+  # Install Bun
+  curl -fsSL https://bun.sh/install | bash
+  ```
 - Claude Code CLI
 
 ## Contributing

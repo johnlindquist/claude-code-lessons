@@ -1,0 +1,7 @@
+{
+  "hooks": {
+    "command": "bun .claude/hooks/index.ts",
+    "workingDirectory": ".",
+    "environment": {}
+  }
+}
